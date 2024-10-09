@@ -1,0 +1,70 @@
+.partners {
+    width: 100%;
+    padding: 210px 0 158px 138px;
+    background-image: url("../img/icons/Group 620 (1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width:1140px) {
+        background-position: center;
+    }
+    @media(max-width:700px) {
+        padding: 20px;
+    }
+    @media(max-width:574px) {
+        padding: 160px 20px 50px ;
+    } 
+    @media(max-width:396px) {
+        padding: 170px 20px 30px;
+    }
+       .partnesr__container {
+        .brendcrumbs {
+            padding: 0;
+            .brendcrumbs__container {
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+        }
+        .link {
+            color: #323232;
+            font-family: "Nunito Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: block;
+            margin-bottom: 58px;
+
+        }
+
+        h1 {
+            color: #D35D05;
+            font-family: "Nunito Sans";
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            @media(max-width:574px) {
+                font-size: 46px;
+            }
+            @media(max-width:396px) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            color: #323232;
+            font-family: "Nunito Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            width: 100%;
+            max-width: 510px;
+            @media(max-width:574px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

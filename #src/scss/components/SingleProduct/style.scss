@@ -1,0 +1,365 @@
+.singleproduct {
+    width: 100%;
+    padding: 90px 138px;
+
+    @media(max-width:1344px) {
+        padding: 70px 20px;
+    }
+
+    @media(max-width:582px) {
+        padding: 40px 20px;
+    }
+
+    @media(max-width:484px) {
+        padding: 30px 20px;
+    }
+
+    .singleproduct__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+
+        @media(max-width:960px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .singleproduct__left {
+            width: 100%;
+            max-width: 530px;
+            position: relative;
+
+            .left__container {
+                .download {
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    a {
+                        color: #323232;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                }
+
+                .swiper {
+                    width: 100%;
+                    max-width: 480px;
+
+                    @media (max-width:768px) {
+                        max-width: 400px;
+                    }
+
+                    .slidenext {
+                        position: absolute;
+                        right: -20px;
+                        top: 40%;
+                        width: 66px;
+                        height: 66px;
+                        background-color: #fff;
+                        z-index: 1;
+                        border-radius: 10px;
+                    }
+
+                    .slideprev {
+                        position: absolute;
+                        left: -20px;
+                        top: 40%;
+                        width: 66px;
+                        height: 66px;
+                        background-color: #fff;
+                        z-index: 1;
+                        border-radius: 10px;
+                    }
+
+                    .swiper-slide {
+                        background-color: #F2F2F2;
+                        border-radius: 20px;
+                        z-index: -1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            object-fit: cover;
+
+                            // @media(max-width:1080px) {
+                            //     width: 280px;
+                            //     height: auto;
+                            // }
+                            @media(max-width:768px) {
+                                width: 300px;
+
+                            }
+                        }
+                    }
+                }
+
+                .left-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    background: #F2F2F2;
+                    padding: 67px 90px;
+
+                    @media(max-width:1080px) {
+                        padding: 30px 50px;
+                    }
+
+
+                }
+
+                span {
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 4px;
+
+                    // svg {
+
+
+                    // }
+                }
+            }
+        }
+
+        .singleproduct__right {
+            width: 100%;
+            max-width: 442px;
+
+            .singleproduct__right_container {
+
+                .right__title {
+                    margin-bottom: 52px;
+
+                    h2 {
+                        color: #D35D05;
+                        font-family: "Nunito Sans";
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .right__choose {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 24px;
+                    margin-bottom: 80px;
+
+                    button {
+                        display: flex;
+                        width: 220px;
+                        height: 60px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 6px;
+                        background: linear-gradient(90deg, #D35D05 0%, #F6901B 100%);
+                        color: #fff;
+                        color: #F2F2F2;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        z-index: 3;
+                    }
+
+                    .right__choose-items {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        gap: 20px;
+                        position: relative;
+
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            z-index: -2;
+                            position: absolute;
+                        }
+
+
+                        a {
+                            display: block;
+                            // background-color: red;
+                            position: absolute;
+                            z-index: 1;
+                            width: 50px;
+                            height: 50px;
+
+                        }
+                    }
+
+                    .choose-market {
+
+                        :nth-child(2) {
+                            position: absolute;
+                            transform: translate(460%);
+                            transition: all 500ms;
+                        }
+
+                        :nth-child(3) {
+                            position: absolute;
+                            transform: translate(calc(560% + 10px));
+                            transition: all 500ms;
+                        }
+
+                        :nth-child(4) {
+                            position: absolute;
+                            transform: translate(calc(660% + 20px));
+                            transition: all 500ms;
+                        }
+                    }
+                }
+
+                .right__info {
+                    width: 100%;
+
+                    .right__info-item {
+                        padding-left: 6px;
+
+                        .info__item-title {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #D35D05;
+                            padding-bottom: 20px;
+
+                            h4 {
+                                color: #323232;
+
+                                font-family: "Nunito Sans";
+                                font-size: 26px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 110%;
+
+                                @media(max-width:430px) {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            h4+span {
+                                position: relative;
+                                width: 30px;
+                                height: 30px;
+                                cursor: pointer;
+                                user-select: none;
+
+                                .width {
+                                    display: block;
+                                    width: 20px;
+                                    border: 1px solid #D35D05;
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 10px;
+                                }
+
+                                .height {
+                                    display: block;
+                                    width: 20px;
+                                    border: 1px solid #D35D05;
+                                    transform: rotate(90deg);
+                                    top: 50%;
+                                    position: absolute;
+
+                                }
+                            }
+                        }
+
+                        .characteristics {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 20px;
+
+                            p {
+                                margin-bottom: 20px;
+                                color: #323232;
+                                font-family: "Nunito Sans";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+
+                            :last-child {
+                                p {
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .info__item-hidden {
+                            font-size: 14px;
+                            height: 0px;
+                            overflow: hidden;
+
+                            p {
+                                color: #323232;
+                                font-family: "Nunito Sans";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            // .hidden__right {
+
+                            //     p {}
+                            // }
+
+                            // .hidden__left {
+
+                            //     p {}
+                            // }
+                        }
+
+                        .opened {
+                            height: max-content;
+                            overflow: visible;
+                            padding-bottom: 20px;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        padding-inline: 30px;
+                        height: 60px;
+                        border-radius: 6px;
+                        border: 1px solid #323232;
+                        color: #323232;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.comments {
+    width: 100%;
+    padding: 130px 20px;
+    background-color: #F2F2F2;
+    @media(max-width:640px) {
+		padding: 60px 20px;
+	}
+	@media(max-width:390px) {
+		padding: 30px 20px;
+	}
+    .comments__container {
+
+        .comments__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 70px;
+
+            h2 {
+                color: #323232;
+                font-family: "Nunito Sans";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: uppercase;
+            }
+
+            .comments__button {
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                gap: 20px;
+
+                button {
+
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+                    background: #FCFCFC;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .slide-prev {
+
+                    svg {
+
+                        path {}
+                    }
+                }
+
+                .slide-next {
+
+                    svg {
+
+                        path {}
+                    }
+                }
+            }
+
+        }
+
+        .comments__swiper {
+            width: 100%;
+            margin-bottom: 60px;
+
+            .swiper {
+
+                .swiper-wrapper {
+
+                    .swiper-slide {
+                        max-width: 450px;
+                        border-radius: 20px;
+                        background: #ffffff;
+                        padding: 40px 30px;
+                        margin-right: 20px;
+                            .comments__item {
+                            .comments__item_content {
+
+                                p {
+
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 140%;
+                                    max-width: 360px;
+                                }
+                            }
+
+                            .comments__item_content-author {
+                                display: flex;
+                                justify-content: end;
+                                align-items: end;
+                                height: 100%;
+
+                                p {
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 140%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .comments__button-buy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                color: #F2F2F2;
+                font-family: "Nunito Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 24px 40px;
+                border-radius: 6px;
+                width: 220px;
+                background: linear-gradient(90deg, #D35D05 0%, #F6901B 100%);
+            }
+        }
+    }
+}

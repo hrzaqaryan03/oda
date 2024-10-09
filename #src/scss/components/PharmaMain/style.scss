@@ -1,0 +1,309 @@
+
+.pharma {
+    width: 100%;
+    padding: 68px 20px 136px;
+    .pharma__container {
+        width: 100%;
+        .pharma__title {
+            width: 100%;
+            margin-bottom: 102px;
+            h1 {
+                color: #D35D05;
+                font-family: "Nunito Sans";
+                font-size: 74px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+                @media(max-width:960px) {
+                    font-size: 50px;
+                }
+                @media(max-width:522px) {
+                    font-size: 40px;
+                }
+                @media(max-width:408px) {
+                    font-size: 30px;
+                }
+            }
+            .orange {
+                color: #D35D05;
+            }
+            p {
+                color: #323232;
+                font-family: "Nunito Sans";
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                margin-bottom: 20px;
+                @media(max-width:960px) {
+                    font-size: 26px;
+                }
+                @media(max-width:522px) {
+                    font-size: 20px;
+                }
+                @media(max-width:408px) {
+                    font-size: 16;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .pharma__body {
+            width: 100%;
+
+            form {
+                width: 100%;
+
+                .pharma-form-confirm {
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    label {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        gap: 20px;
+                        position: relative;
+                        .checkmark {
+                            width: 24px;
+                            height: 24px;
+                            border: 1px solid #414141;
+                            position: absolute;
+                            background-color: #fff;
+                            border-radius: 4px;
+                        }
+                        input {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        border-radius: 6px;
+                        background: linear-gradient(90deg, #D35D05 0%, #F6901B 100%);
+                        padding: 24px 40px;
+                        color: #F2F2F2;
+                        font-family: "Nunito Sans";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .text-input {
+                    width: 100%;
+                    display: block;
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: 0 20px;
+                        height: 70px;
+                        border-radius: 6px;
+                        border: 1px solid #323232;
+                        background: #FCFCFC;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        &::placeholder {
+                            color: rgba(50, 50, 50, 0.50);
+                        }
+                    }
+
+                    textarea {
+                        height: 400px;
+                        resize: none;
+                        outline: none;
+                        padding: 26px 20px;
+                    }
+                }
+
+                .quest-input {
+                    width: 100%;
+                    display: block;
+
+                    p {
+                        color: #323232;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 16px;
+                    }
+
+                    .buttons,
+                    .buttons-grid {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+
+                        .input-quest__checkbox {
+                            width: 100%;
+                            display: block;
+                            max-width: 180px;
+                            position: relative;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                z-index: 2;
+                                cursor: pointer;
+                                opacity: 0;
+
+                                &:checked~span {
+                                    background-color: #D35D05;
+                                    color: #FCFCFC;
+                                }
+                            }
+
+                            span {
+                                border-radius: 3px;
+                                border: 1px solid #323232;
+                                background: #FCFCFC;
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 30px;
+                                color: #323232;
+                                font-family: "Nunito Sans";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+
+                    .buttons-grid {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: 24px;
+                        @media(max-width:960px) {
+                            grid-template-columns: repeat(2,1fr);
+                        } 
+                        @media(max-width:960px) {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                        .input-quest__checkbox {
+                            max-width: unset;
+                        }
+                    }
+                }
+
+                .pharma__form-item {
+                    width: 100%;
+                    margin-bottom: 108px;
+
+                    h3 {
+                        color: #D35D05;
+                        font-family: "Nunito Sans";
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 110%;
+                        margin-bottom: 50px;
+                    }
+
+                    .grid {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-gap: 24px;
+                        margin-bottom: 50px;
+                        @media(max-width:960px) {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-gap: 18px;
+                        }
+                        @media(max-width:640px) {
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .criteries {
+                            grid-column-start: 1;
+                            grid-column-end: 4;
+                        }
+
+                        .reaction__info {
+                            grid-column-start: 2;
+                            grid-column-end: 4;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            @media(max-width:640px) {
+                                grid-column-start: unset;
+                                grid-column-end: unset;
+                            }
+                            .quest-input {
+                                max-width: 456px;
+                            }
+
+                            .reaction-flex {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 24px;
+                                @media(max-width:640px) {
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+
+                    .add-new-input {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 20px;
+                        color: #323232;
+                        font-family: "Nunito Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-top: 30px;
+                    }
+
+                    .pharm-reaction {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+
+                        &:nth-child(1) {
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

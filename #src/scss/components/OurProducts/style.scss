@@ -1,0 +1,240 @@
+.products {
+    position: relative;
+    clip-path: polygon(100% 2%, 100% 100%, 0 100%, 0 0);
+    background-color: #F2F2F2;
+    padding: 137px 20px;
+
+    .products__container {
+
+        .products__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            @media(max-width:520px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .products__title {
+                h2 {
+                    color: #323232;
+                    font-family: "Nunito Sans";
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 110%;
+                    text-transform: uppercase;
+                    margin-bottom: 72px;
+
+                    @media(max-width:520px) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .products__swiper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                @media(max-width:520px) {
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    height: 60px;
+                    width: 60px;
+                    background: #FCFCFC;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 6px;
+
+                    .left {
+
+
+
+
+
+                        &:hover {
+                            background-color: #e4e4e4;
+                        }
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+
+                            * {
+                                pointer-events: none;
+                            }
+                        }
+                    }
+
+                    .right {
+
+                        &:hover {
+                            background-color: #e4e4e4;
+                        }
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .products__body {
+            max-width: 1200px;
+
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        max-width: 380px;
+                       
+                        .products__body-item {
+                            font-size: 16px;
+                            background-color: #fff;
+                            border-radius: 20px;
+                            padding-bottom: 20px;
+
+                            .item-pic {
+                                width: 100%;
+                                max-width: 358px;
+                                height: 272px;
+                                object-fit: cover;
+                                margin-bottom: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+
+
+                                img {
+                                    user-select: none;
+                                    display: block;
+                                    margin: 0 auto;
+                                    @media(max-width:520px) {
+                                        width: 258px;
+                                        height: auto;
+                                    }
+                                }
+                            }
+
+                            .item-info {
+                                padding-inline: 18px;
+
+
+
+                                .item-info__middle {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+
+                                    span {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        flex-direction: column;
+                                        align-items: start;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
+                                p {
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    margin-bottom: 10px;
+                                }
+
+                                span {
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+
+                                h6 {
+                                    color: #D35D05;
+                                    font-family: "Nunito Sans";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 140%;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    margin-bottom: 30px;
+                                }
+
+
+                            }
+
+                            .item-controls {
+                                padding-inline: 18px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 10px;
+
+                                @media(max-width:520px) {
+                                    flex-direction: column;
+                                }
+                                button {
+                                    display: flex;
+                                    width: 165px;
+                                    height: 47px;
+                                    padding: 24px 40px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    flex-shrink: 0;
+                                    border-radius: 6px;
+                                    border: 1px solid #323232;
+                                    color: #323232;
+                                    font-family: "Nunito Sans";
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+
+                                    @media(max-width:520px) {
+                                        width: 100%;
+                                    }
+                                }
+                                .buy {
+                                    display: flex;
+                                    width: 165px;
+                                    height: 47px;
+                                    padding: 24px 40px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    flex-shrink: 0;
+                                    border-radius: 6px;
+                                    background: linear-gradient(90deg, #D35D05 0%, #F6901B 100%);
+                                    color: #F2F2F2;
+                                    border: 0px;
+                                    @media(max-width:520px) {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

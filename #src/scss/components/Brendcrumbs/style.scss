@@ -1,0 +1,30 @@
+.brendcrumbs {
+    padding: 86px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .brendcrumbs__container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 130px;
+        gap: 6px;
+        a {
+            color: #323232;
+            font-family: "Nunito Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        p {
+            color: #D35D05;
+            font-family: "Nunito Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}

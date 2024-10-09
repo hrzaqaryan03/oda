@@ -1,0 +1,63 @@
+.our-partners {
+    width: 100%;
+    padding: 108px 20px;
+    @media(max-width:820px) {
+        padding: 90px 20px;
+    }
+    @media(max-width:448px) {
+        padding: 40px 20px;
+    }
+    .our-partners__container {
+
+        .our-partners__title {
+            margin-bottom: 72px;
+            @media(max-width:400px) {
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                color: #323232;
+                font-family: "Nunito Sans";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: uppercase;
+            }
+        }
+
+        .our-partners__body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            @media(max-width:1260px) {
+                flex-direction: column;
+            }
+            .item {
+                width: 100%;
+                max-width:580px;
+                height: 281px;
+                padding: 98px 80px;
+                border-radius: 20px;
+                background: #F2F2F2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media(max-width:760px) {
+                    padding: 60px;
+                    height: auto;
+                }
+                img {
+                    @media(max-width:760px) {
+                        width: 300px;
+                        height: auto;
+                    }
+                    @media(max-width:400px) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

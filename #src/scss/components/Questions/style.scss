@@ -1,0 +1,124 @@
+.questions {
+    width: 100%;
+    padding: 120px 130px;
+
+    @media(max-width:1200px) {
+        padding: 60px 20px;
+    }
+
+    @media(max-width:596px) {
+        padding: 30px 20px;
+    }
+
+    .questions__container {
+        margin: 0 auto;
+
+        .questions__title {
+            width: 100%;
+            margin-bottom: 70px;
+           
+            h2 {
+                color: #323232;
+                font-family: "Nunito Sans";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: uppercase;
+            }
+        }
+
+        .questions__body {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+
+            @media(max-width:960px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .questions__info-blocks {
+                max-width: 670px;
+
+                @media(max-width:960px) {
+                    max-width: 460px;
+                }
+
+                .info-block__item {
+                    // border-radius: 10px;
+                    // background: #F2F2F2;
+                    // margin-bottom: 20px;
+                    // padding: 18px 28px;
+                    // height: 66px;
+
+
+
+                    .info-question {
+                        border-radius: 10px;
+                        background: #F2F2F2;
+                        margin-bottom: 20px;
+                        height: 66px;
+                        display: flex;
+                        padding: 10px;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        p {
+                            color: #323232;
+                            font-family: "Nunito Sans";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 100%;
+                            max-width: 428px;
+                        }
+
+                        span {
+
+                            svg {
+                                width: 20px;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .hidden {
+                        height: 0px;
+                        overflow: hidden;
+                        padding: 0 10px;
+                        p {
+                            color: #323232;
+                            font-family: "Nunito Sans";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 140%;
+                        }
+                    }
+
+                    .open {
+                        overflow: auto;
+                        height: 100px;
+                    }
+                }
+            }
+
+            .questions__pic {
+
+                img {
+                    @media(max-width:960px) {
+                        max-width: 460px;
+                        height: auto;
+                    }
+
+                    @media(max-width:500px) {
+                        max-width: 300px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
